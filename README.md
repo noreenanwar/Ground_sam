@@ -17,3 +17,7 @@ Transformer-based object detectors often struggle with occlusions, fine-grained 
 <p align="center">
   <img width=95% src="image.png">
 </p>
+## Comparison between Baseline and DAMM:
+<p align="center">
+  <img width=95% src="fig1.png">
+</p>
