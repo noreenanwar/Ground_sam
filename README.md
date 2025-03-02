@@ -17,7 +17,69 @@ Transformer-based object detectors often struggle with occlusions, fine-grained 
 <p align="center">
   <img width=95% src="image.png">
 </p>
+
+
+
 ## Comparison between Baseline and DAMM:
 <p align="center">
   <img width=95% src="fig1.png">
 </p>
+
+
+
+
+
+## Installation
+
+### Requirements
+- Python >= 3.7, CUDA >= 10.1
+- PyTorch >= 1.7.0, torchvision >= 0.6.1
+- Cython, COCOAPI, scipy, termcolor
+
+The code is developed using Python 3.8 with PyTorch 1.7.0.
+First, clone the repository locally:
+```shell
+git clone https://github.com/Atten4Vis/ConditionalDETR.git
+```
+Then, install PyTorch and torchvision:
+```shell
+conda install pytorch=1.7.0 torchvision=0.6.1 cudatoolkit=10.1 -c pytorch
+```
+Install other requirements:
+```shell
+cd DAMM
+pip install -r requirements.txt
+```
+
+
+
+## Usage
+
+### Data preparation
+
+Download and extract COCO 2017 train and val images with annotations from
+[http://cocodataset.org](http://cocodataset.org/#download).
+We expect the directory structure to be the following:
+```
+path/to/coco/
+├── annotations/  # annotation json files
+└── images/
+    ├── train2017/    # train images
+    ├── val2017/      # val images
+    └── test2017/     # test images
+```
+
+
+
+### Training
+
+To train DAMM on a single node with 8 gpus for 50 epochs run:
+## License
+
+Conditional DETR is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
+
+
+
+## Citation
+
+
