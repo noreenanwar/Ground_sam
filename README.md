@@ -76,7 +76,7 @@ path/to/coco/
 To train DAMM on a single node with 8 gpus for 50 epochs run:
 ## License
 
-Conditional DETR is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
+DAMM is released under the Apache 2.0 license. Please see the [LICENSE](LICENSE) file for more information.
 
 
 
